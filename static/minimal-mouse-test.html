@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Test input event</title>
+    </head>
+    <body>
+        <input id="test-input"/>
+    </body>
+    <script>
+        let elem = window.document.getElementById('test-input');
+        elem.addEventListener('mousedown', (event) => {
+            console.log(`trigerred event show from static/html file ! 
+                button clicked: '${event.button}'
+                is instanceof  MouseEvent ? : (${event instanceof MouseEvent})
+                event type: (${event.type})
+                event constructor: ${event.constructor}
+                event object: 
+            `, event);
+        });
+    </script>
+</html>
