@@ -1,0 +1,27 @@
+{
+  "name": "cypress-test-tiny",
+  "version": "1.0.0",
+  "description": "Small project for reproduction cypress event issue",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:verify": "cypress verify",
+    "cypress:version": "cypress version",
+    "list-videos": "ls -l cypress/videos",
+    "check-videos": "ok-file 'cypress/videos/*.mp4'",
+    "set-status": "set-status"
+  },
+  "keywords": [],
+  "author": "Andrew Valleteau",
+  "license": "ISC",
+  "devDependencies": {
+    "ok-file": "1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+  },
+  "dependencies": {
+    "cypress": "^3.6.1"
+  }
+}
