@@ -6,9 +6,11 @@
     </head>
     <body>
         <input id="test-input"/>
+        <div id="result"></div>
     </body>
     <script>
         let elem = window.document.getElementById('test-input');
+        let resultDiv = window.document.getElementById('result');
         elem.addEventListener('mousedown', (event) => {
             console.log(`trigerred event show from static/html file ! 
                 button clicked: '${event.button}'
@@ -17,6 +19,7 @@
                 event constructor: ${event.constructor}
                 event object: 
             `, event);
+            resultDiv.innerText = `isMouseEvent: ${event instanceof MouseEvent}`;
         });
     </script>
 </html>
